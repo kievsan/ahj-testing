@@ -2,6 +2,10 @@
 
 **CI** [![Build status](https://ci.appveyor.com/api/projects/status/km3a74utn35l45e9?svg=true)](https://ci.appveyor.com/project/kievsan/ahj-testing)    [GitHub Pages](https://kievsan.github.io/ahj-testing/)
 
+**Результаты**: e2e-тесты в консоли проходят отлично, а в AppVeyor - нет ("Could not find Chromium")
+
+
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов

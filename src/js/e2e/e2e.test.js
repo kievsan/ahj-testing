@@ -20,6 +20,7 @@ describe("test validator form", () => {
     browser = await puppetteer.launch({
       headless: false, // show gui
       slowMo: 100,
+      args: ["--no-sandbox"],
       // devtools: true, // show devTools
     });
     page = await browser.newPage();

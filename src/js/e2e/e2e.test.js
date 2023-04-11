@@ -24,8 +24,8 @@ describe("test validator form", () => {
       // devtools: true, // show devTools
     });
     page = await browser.newPage();
-    jest.setTimeout(10000);
-  });
+    // jest.setTimeout(10000);
+  }, 10000);
 
   afterAll(async () => {
     await browser.close();

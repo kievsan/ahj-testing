@@ -1,7 +1,6 @@
 import puppetteer from "puppeteer";
 import { fork } from "child_process";
 
-jest.setTimeout(60000);
 describe("test validator form", () => {
   let browser = null;
   let page = null;
@@ -19,11 +18,12 @@ describe("test validator form", () => {
       });
     });
     browser = await puppetteer.launch({
-      // headless: false, // show gui
-      // slowMo: 100,
+      headless: false, // show gui
+      slowMo: 100,
       // devtools: true, // show devTools
     });
     page = await browser.newPage();
+    jest.setTimeout(10000);
   });
 
   afterAll(async () => {
@@ -38,7 +38,7 @@ describe("test validator form", () => {
     const submit = await page.$("#card-submit");
     await submit.click();
     await page.waitForSelector(".cardVisa.active");
-  });
+  }, 35000);
 
   test("AmericanExpress", async () => {
     await page.goto(baseUrl);
@@ -47,5 +47,5 @@ describe("test validator form", () => {
     const submit = await page.$("#card-submit");
     await submit.click();
     await page.waitForSelector(".cardAmericanExpress.active");
-  });
+  }, 35000);
 });

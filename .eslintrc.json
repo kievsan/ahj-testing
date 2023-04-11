@@ -24,6 +24,7 @@
     // "import/extensions": ["error", "ignorePackages"],
     "import/no-extraneous-dependencies": "off",
     "no-undef": "off",
+    "jest/expect-expect": "off",
     "linebreak-style": [0, "error", "windows"]
   },
   "overrides": [

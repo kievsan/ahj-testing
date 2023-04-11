@@ -23,7 +23,6 @@ h3 {
 }
 .card-item {
   position: relative;
-  background-position: 0 0;
   margin-right: 20px;
   width: 70px;
   height: 40px;
@@ -39,11 +38,11 @@ h3 {
 .cardVisa {
   background-image: url(../img/visa_electron.png);
 }
-.cardMactercard {
+.cardMastercard {
   background-image: url(../img/mastercard.png);
 }
 .cardMir {
-  background-image: url(../img//mir.png);
+  background-image: url(../img/mir.png);
 }
 .cardAmericanExpress {
   background-image: url(../img/american_express.png);
@@ -51,7 +50,7 @@ h3 {
 .cardUnionPay {
   background-image: url(../img/unionpay.png);
 }
-.cardMaectro {
+.cardMaestro {
   background-image: url(../img/maestro.png);
 }
 [data-widget="card-form-widget"] {

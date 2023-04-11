@@ -24,14 +24,14 @@ export default function paySystem(number) {
     case 58:
     case 67:
     case 63:
-      document.querySelector(".cardMaectro").classList.add("active");
+      document.querySelector(".cardMaestro").classList.add("active");
       break;
     case 51:
     case 52:
     case 53:
     case 54:
     case 55:
-      document.querySelector(".cardMactercard").classList.add("active");
+      document.querySelector(".cardMastercard").classList.add("active");
       break;
     case 62:
       document.querySelector(".cardUnionPay").classList.add("active");

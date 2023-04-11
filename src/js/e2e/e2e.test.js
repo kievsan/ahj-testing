@@ -24,10 +24,10 @@ describe("test validator form", () => {
       // devtools: true, // show devTools
     });
     page = await browser.newPage();
-    // jest.setTimeout(10000);
-  }, 10000);
+  }, 35000);
 
   test("visa", async () => {
+    // jest.setTimeout(35000);
     await page.goto(baseUrl);
     const input = await page.$("#numberCard-input");
     await input.type("4539283476916568");

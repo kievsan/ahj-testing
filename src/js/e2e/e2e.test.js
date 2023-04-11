@@ -27,11 +27,6 @@ describe("test validator form", () => {
     // jest.setTimeout(10000);
   }, 10000);
 
-  afterAll(async () => {
-    await browser.close();
-    server.kill();
-  });
-
   test("visa", async () => {
     await page.goto(baseUrl);
     const input = await page.$("#numberCard-input");
@@ -49,4 +44,9 @@ describe("test validator form", () => {
     await submit.click();
     await page.waitForSelector(".cardAmericanExpress.active");
   }, 35000);
+
+  afterAll(async () => {
+    await browser.close();
+    server.kill();
+  });
 });

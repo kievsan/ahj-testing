@@ -2,9 +2,6 @@
 
 **CI** [![Build status](https://ci.appveyor.com/api/projects/status/km3a74utn35l45e9?svg=true)](https://ci.appveyor.com/project/kievsan/ahj-testing)    [GitHub Pages](https://kievsan.github.io/ahj-testing/)
 
-**Результаты**: e2e-тесты в консоли проходят отлично, а в AppVeyor - нет ("Could not find Chromium")
-
-
 
 Правила сдачи задания:
 
@@ -17,6 +14,11 @@
 В качестве примера организации e2e-тестирования используйте код из каталога [`e2e`](e2e).
 
 ---
+
+**Результаты**: e2e-тесты в консоли проходят отлично, а в AppVeyor - нет ("Could not find Chromium"), но **npm i chromium** не помогло...:
+
+![](./pic/appveyor_ERR.png)
+
 
 ### Credit Card Validator
 
